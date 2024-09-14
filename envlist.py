@@ -43,7 +43,7 @@ with lock:
         # create a list (named clist) of nevns environments with the 
         # prefix envprefix
         # add code here
-        clist = [f"{envprefix}_{i}" for i in range(int(nenvs))]
+        clist = [f"{envprefix}{i}" for i in range(int(nenvs))]
         print(clist)
     else:
         # load hickle file
